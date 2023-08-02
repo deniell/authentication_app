@@ -12,3 +12,9 @@ Fresh in memory how to create user authentication flow using Firebase Authentica
 #### Driven by
 Flutter 3.7.0-stable
 Dart 2.19.0
+
+## Run the app
+For functioning the app need nex files provided:
+    android/app/google-services.json
+    ios/Runner/GoogleService-Info.plist
+    ios/firebase_app_id_file.json

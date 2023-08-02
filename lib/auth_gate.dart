@@ -1,8 +1,8 @@
+import 'package:authentication_app/home.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterfire_ui/auth.dart';
 
-import 'home.dart';
 
 class AuthGate extends StatelessWidget {
   const AuthGate({super.key});
@@ -16,6 +16,7 @@ class AuthGate extends StatelessWidget {
           return SignInScreen(
             providerConfigs: const [
               EmailProviderConfiguration(),
+              GoogleProviderConfiguration(clientId: '763884961458-3etrkurkin00c0n37ki65hqio3dhnlhp.apps.googleusercontent.com'),
             ],
             headerBuilder: (context, constraints, shrinkOffset) {
               return Padding(
